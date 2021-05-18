@@ -1,38 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    text-align: center;
+    background-color: #041C3C;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 95vh;
+    margin: auto;
+    border-radius: 40px;
+    padding-top: 35px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    width: 100%;
+    max-width: 1376px;
+    height: 56px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    /* border: darkgray solid 1px; */
+    height: 56px;
+    left: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    margin-right: 167px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-text {
+    width: 100%;
+    max-width: 724px;
+    min-height: 56px;
+    margin: auto;
+    height: fill-available;
+    border-radius: 8px;
+    border: 0px;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.16);
+    flex: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 14px;
+    color: #FFFFFF;
+    opacity: 0.64;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #FFFFFF;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FFFFFF;
+}
+
+:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+.info-user {
+    width: 100%;
+    max-width: 82px;
+    height: fill-available;
+    margin-left: 206px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+}
+
+.info-user img {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px 0px 0px;
+}
+
+.info-user span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.app-body {
+    width: 100%;
+    max-width: 1376px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    /* border: darkgray solid 1px; */
+}
+
+div {
+    border: darkgray solid 1px;
+}
+
+.app-menu {
+    width: 100%;
+    max-width: fit-content;
+    margin-right: 123px;
+}
+
+.menu-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: initial;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+#editor-icon {
+    background-color: #5081FB;
+}
+
+#comunity-icon {
+    background: #5081FB29;
+}
+
+.app-content {
+    width: 100%;
+    max-width: 752px;
+    min-height: 366px;
+    margin: auto;
+}
+
+.app-form {
+    width: 100%;
+    max-width: 272px;
+    margin-left: 40px;
+}
+
+#project-name {
+    width: 244px;
+    height: 56px;
+    margin-bottom: 16px;
+}
+
+#project-description {
+    width: 244px;
+    margin-bottom: 40px;
+    height: 80px;
+}
+
+select option {
+    color: rgba(0, 0, 0, 0.70);
+    display: flex;
+    align-items: initial;
+    margin: 0px;
+}
+
+#color-pick {
+    background-color: #041C3C;
+    padding: 0px;
+    width: 100%;
+    max-width: 272px;
+    height: 40px;
+    margin: 16px 0px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    text-decoration-line: none;
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    max-width: 272px;
+    height: 56px;
+    background: #5081FB;
+    border-radius: 8px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #051D3B;
+    border: none;
 }
