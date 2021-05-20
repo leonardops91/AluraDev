@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+#root {
+    margin: 0;
+}
+
 .App {
     text-align: center;
     background-color: #041C3C;
     width: 100%;
     max-width: 1440px;
     min-height: 95vh;
-    margin: auto;
-    border-radius: 40px;
+    margin: 0 auto;
+    border: 0px;
+    border-radius: 10px;
     padding-top: 35px;
 }
 
@@ -102,10 +107,6 @@
     /* border: darkgray solid 1px; */
 }
 
-div {
-    border: darkgray solid 1px;
-}
-
 .app-menu {
     width: 100%;
     max-width: fit-content;
@@ -168,8 +169,70 @@ a {
 .app-content {
     width: 100%;
     max-width: 752px;
-    min-height: 366px;
-    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.codeForm {
+    width: 100%;
+    max-width: 752px;
+    height: 366px;
+    border-radius: 8px;
+    background-color: #6BD1FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.applyButton {
+    width: 100%;
+    max-width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(80, 129, 251, 0.08);
+    margin-top: 32px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mac_buttons {
+    width: 100%;
+    max-width: 52px;
+    height: 12px;
+    position: absolute;
+    left: 48px;
+    top: 48px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+.circle {
+    width: 100%;
+    max-width: 12px;
+    height: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FFBD2E;
+}
+
+.code {
+    width: 100%;
+    max-width: 656px;
+    height: 234px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: black;
+    color: #FFFFFF;
+    resize: none;
+    padding: 52px 16px 16px 16px;
+    position: relative;
 }
 
 .app-form {

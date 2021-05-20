@@ -1,3 +1,4 @@
+// import './reset.css';
 import './App.css';
 import logo from './assets/Logo.png';
 import foto from './assets/Photo.png';
@@ -29,7 +30,28 @@ function App() {
           </ul>
         </div>
 
-        <div className="app-content"></div>
+        <div className="app-content">
+          <div className="codeForm">
+            <textarea type="textarea" className="code" >
+              const pluckDeep = key =&gt; obj =&gt; key.split('.').reduce((accum, key) =&gt; accum[key], obj)
+              const compose = (...fns) =&gt; res =&gt; fns.reduce((accum, next) =&gt; next(accum), res)
+              const unfold = (f, seed) =&gt; &#123;
+              const go = (f, seed, acc) =&gt; &#123;
+              const res = f(seed)
+              return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              &#125;
+              return go(f, seed, [])
+              &#125;
+          </textarea>
+
+            <div className="mac_buttons">
+              <div className="circle" style={{ backgroundColor: '#FF5F56' }} ></div>
+              <div className="circle" style={{ marginRight: 8, marginLeft: 8 }}></div>
+              <div className="circle" style={{ backgroundColor: '#27C93F' }}></div>
+            </div>
+          </div>
+          <input type="button" value="Visualizar com o highlight" className="applyButton" />
+        </div>
 
         <div className="app-form">
           <p className="menu-title">seu projeto</p>
