@@ -32,17 +32,7 @@ function App() {
 
         <div className="app-content">
           <div className="codeForm">
-            <textarea type="textarea" placeholder="const pluckDeep = key =&gt; obj =&gt; key.split('.').reduce((accum, key) =&gt; accum[key], obj)
-              const compose = (...fns) =&gt; res =&gt; fns.reduce((accum, next) =&gt; next(accum), res)
-              const unfold = (f, seed) =&gt; &#123;
-              const go = (f, seed, acc) =&gt; &#123;
-              const res = f(seed)
-              return res ? go(f, res[1], acc.concat([res[0]])) : acc
-              &#125;
-              return go(f, seed, [])
-              &#125;" className="code" >
-
-            </textarea>
+            <textarea type="textarea" placeholder="Digite seu código aqui..." className="code" autofocus="true" />
 
             <div className="mac_buttons">
               <div className="circle" style={{ backgroundColor: '#FF5F56' }} ></div>
