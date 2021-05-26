@@ -7,11 +7,9 @@
     text-align: center;
     background-color: #041C3C;
     width: 100%;
-    max-width: 1440px;
     min-height: 95vh;
     margin: 0 auto;
     border: 0px;
-    border-radius: 10px;
     padding-top: 35px;
 }
 
@@ -24,7 +22,6 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    /* border: darkgray solid 1px; */
     height: 56px;
     left: 32px;
 }
@@ -52,6 +49,11 @@
     padding: 0 14px;
     color: #FFFFFF;
     opacity: 0.64;
+    transition: background-color 0.2s;
+}
+
+.input-text:hover {
+    background-color: rgba(255, 255, 255, 0.24);
 }
 
 ::-webkit-input-placeholder {
@@ -81,6 +83,12 @@
     flex-direction: row;
     align-items: center;
     padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.info-user:hover {
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .info-user img {
@@ -104,13 +112,12 @@
     max-width: 1376px;
     margin: 40px auto 40px auto;
     display: flex;
-    /* border: darkgray solid 1px; */
 }
 
 .app-menu {
     width: 100%;
-    max-width: fit-content;
-    margin-right: 123px;
+    max-width: 200px;
+    margin-right: 113px;
 }
 
 .menu-title {
@@ -146,6 +153,20 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    border-radius: 16px 8px 8px 16px;
+    transition: background-color 0.2s;
+}
+
+a:hover {
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+a:active {
+    border: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+a:focus {
+    background-color: rgba(80, 129, 251, 0.24);
 }
 
 .menu-icon {
@@ -199,6 +220,19 @@ a {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
+    transition: background-color 0.2s;
+}
+
+.applyButton:hover {
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+.applyButton:active {
+    border: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+.applyButton:focus {
+    background-color: rgba(80, 129, 251, 0.24);
 }
 
 .mac_buttons {
@@ -248,9 +282,11 @@ a {
 }
 
 #project-description {
-    width: 244px;
+    width: 242px;
     margin-bottom: 40px;
     height: 80px;
+    padding: 16px 14px;
+    resize: none;
 }
 
 select option {
@@ -271,6 +307,7 @@ select option {
     border-radius: 4px;
     text-decoration-line: none;
     outline: none;
+    color: blue;
 }
 
 .button {
@@ -281,10 +318,23 @@ select option {
     border-radius: 8px;
     font-family: Inter;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     color: #051D3B;
     border: none;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #7BA4FC;
+}
+
+.button:active {
+    border: 4px solid rgba(80, 129, 251, 0.72);
+}
+
+.button:focus {
+    background-color: #96B9FD;
 }
