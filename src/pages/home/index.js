@@ -1,5 +1,5 @@
-import Header from '../Header';
-import Menu from '../Menu';
+import Header from '../../components/Header';
+import Menu from '../../components/Menu';
 import { useState } from 'react';
 
 
